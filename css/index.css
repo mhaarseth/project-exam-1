@@ -1,0 +1,17 @@
+@import "global.css";
+
+.main-home {
+  display: flex;
+  margin: 0 auto;
+}
+
+.home-image {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+
+/*
+<figure class="home-image"></figure>
+<div class="home-text"></div>
+*/

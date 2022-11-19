@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+html {
+  font-family: poppins;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #011bff;
+}
+
+body {
+  margin: 0;
+  background-color: #fdd8da;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.blog-title {
+  color: #011bff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-divider {
+  width: 2px;
+  height: 40px;
+  background-color: black;
+  margin: 0 10px 0 10px;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.heading-container h1 {
+  font-size: 1.7rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+.current-page {
+  padding-right: 50px;
+}
+
+.navigation {
+  display: flex;
+  margin: 1% 5% 0 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.open-menu-button {
+  padding-right: 10px;
+}
+
+.close-menu-button {
+  display: none;
+  padding-right: 10px;
+}
+
+.hamburger-menu {
+  background-color: #fdd8da;
+  display: none;
+  list-style-type: none;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  position: fixed;
+  z-index: 100;
+  right: 5%;
+  top: 77px;
+}
+
+.main-right,
+.main-left {
+  width: 600px;
+  height: 400px;
+  background-color: black;
+}
+
+footer {
+  background-color: #1d6753;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-text-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-template-rows: 1fr auto 1fr;
+}
+
+.footer-divider {
+  width: 300px;
+  height: 1px;
+  background-color: white;
+  margin: 1px auto 1px auto;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.footer-bottom-divider {
+  background-color: white;
+  width: 1px;
+  height: 20px;
+  margin: 6px 10px 6px 10px;
+}
+
+.sitemap-list {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.sitemap-list a {
+  color: white;
+  text-decoration: none;
+}
