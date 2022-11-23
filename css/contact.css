@@ -3,7 +3,7 @@
 .contact-container {
   display: flex;
   justify-content: center;
-  margin: 0 5% 0 5%;
+  margin: 0 auto;
 }
 
 form {
@@ -18,7 +18,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  min-width: 400px;
+  min-width: 355px;
 }
 
 .form-fields-container label {
@@ -42,7 +42,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  min-width: 400px;
+  min-width: 355px;
   max-height: 600px;
   min-height: 400px;
 }
