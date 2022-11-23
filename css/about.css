@@ -1,6 +1,57 @@
 @import "global.css";
 
-.main-about {
+.about-content-container {
   display: flex;
-  margin: 0 auto;
+  flex-direction: row;
+  margin: 50px 5% 0 5%;
+  gap: 40px;
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0;
+}
+
+.about-image-container img {
+  width: 75%;
+}
+
+.about-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.about-text {
+  width: 75%;
+}
+
+.about-text p {
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 810px) {
+  .about-content-container {
+    flex-direction: column;
+  }
+  .about-image-container img {
+    width: 100%;
+  }
+
+  .about-image-container {
+    width: 100%;
+  }
+
+  .about-text-container {
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
 }

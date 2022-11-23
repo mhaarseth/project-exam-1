@@ -36,7 +36,49 @@
         <li><a class="menu-link" href="contact.html">contact</a></li>
       </ul>
     </header>
-    <main class="main-home"></main>
+    <main class="contact-container">
+      <form method="POST" novalidate>
+        <div class="form-fields-container">
+          <div class="form-fields-label-container">
+            <label for="name">Full name:</label>
+            <span class="form-validation-message"
+              >Must be at least five characters</span
+            >
+          </div>
+          <input type="text" id="name" />
+          <div class="form-fields-label-container">
+            <label for="e-mail">E-mail:</label>
+            <span class="form-validation-message"
+              >Must be a valid e-mail address</span
+            >
+          </div>
+          <input type="email" id="e-mail" />
+          <div class="form-fields-label-container">
+            <label for="subject">Subject:</label>
+            <span class="form-validation-message"
+              >Must be at least fifteen characters</span
+            >
+          </div>
+          <input type="text" id="subject" />
+        </div>
+        <div class="form-textarea-container">
+          <div class="form-fields-label-container">
+            <label for="message" id="message">Your Message:</label>
+            <span class="form-validation-message"
+              >Must be at least 25 characters</span
+            >
+          </div>
+          <textarea id="message"></textarea>
+          <button
+            action="submit"
+            class="submit-contact-form"
+            aria-label="Submit contact form"
+          >
+            Submit your message
+          </button>
+        </div>
+      </form>
+    </main>
     <footer>
       <div class="footer-text-container">
         <div class="footer-top">

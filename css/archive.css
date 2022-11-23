@@ -1,6 +1,88 @@
 @import "global.css";
 
-.main-archive {
+.archive-content-container {
   display: flex;
-  margin: 0 auto;
+  flex-direction: column;
+  margin: 50px 5% 0 5%;
+}
+
+.archive-content-container h2 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.archive-content-heading-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.archive-content-heading-container-divider {
+  height: 25px;
+  width: 2px;
+  background-color: black;
+  margin: 0 5px 0 5px;
+}
+
+.post-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.post-card {
+  width: 23%;
+}
+
+.post-card-header-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-card-img {
+  width: 100%;
+  margin: 0;
+}
+
+.post-card-img img {
+  width: 100%;
+}
+
+.post-card-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more-button {
+  color: white;
+  padding: 10px;
+  background-color: #1d6753;
+}
+
+.read-more-button:hover {
+  border: 2px solid black;
+  padding: 8px;
+}
+
+@media only screen and (max-width: 1665px) {
+  .post-card {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .post-card {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .post-card {
+    width: 100%;
+  }
+  .post-cards-container {
+    flex-direction: column;
+  }
 }

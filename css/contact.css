@@ -1,6 +1,71 @@
 @import "global.css";
 
-.main-contact {
+.contact-container {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+  margin: 0 5% 0 5%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 5%;
+}
+
+.form-fields-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+.form-fields-container label {
+  margin: 20px 0 5px 0;
+}
+
+.form-fields-label-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-validation-message {
+  margin-top: 20px;
+}
+
+.form-validation-message {
+  color: #c9001b;
+}
+
+.form-textarea-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 400px;
+  max-height: 600px;
+  min-height: 400px;
+}
+
+textarea {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+}
+
+.form-textarea-container label {
+  margin: 20px 0 5px 0;
+}
+
+.form-textarea-container button {
+  margin-top: 20px;
+  color: white;
+  padding: 10px;
+  background-color: #1d6753;
+  align-self: flex-start;
+}
+
+.form-textarea-container button:hover {
+  border: 2px solid black;
+  padding: 8px;
 }

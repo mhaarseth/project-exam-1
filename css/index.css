@@ -1,6 +1,90 @@
 @import "global.css";
 
-.main-home {
+.home-content-container {
   display: flex;
-  margin: 0 auto;
+  margin: 50px 5% 50px 5%;
+  gap: 20px;
+}
+
+.home-image {
+  width: 50%;
+  margin: 0;
+}
+
+.home-image img {
+  width: 100%;
+}
+
+.home-text {
+  width: 50%;
+}
+
+.home-text-heading {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-arrow {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid #1d6753;
+  position: fixed;
+  left: 1%;
+  top: 40%;
+}
+
+.right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #1d6753;
+  position: fixed;
+  right: 1%;
+  top: 40%;
+}
+
+/* Media Queries*/
+
+@media only screen and (max-width: 810px) {
+  .home-content-container {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 15px;
+  }
+
+  .home-image {
+    width: 100%;
+  }
+
+  .home-text {
+    width: 100%;
+  }
+
+  .right-arrow {
+    right: 1%;
+  }
+
+  .left-arrow {
+    left: 1%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .right-arrow {
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid #1d6753;
+  }
+
+  .left-arrow {
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-right: 16px solid #1d6753;
+  }
 }
