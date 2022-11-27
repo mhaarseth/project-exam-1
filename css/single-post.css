@@ -1,0 +1,84 @@
+@import "global.css";
+
+.current-page {
+  font-weight: bold;
+  color: #011bff;
+}
+
+.single-post-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-post-heading-container {
+  margin-left: 240px;
+}
+
+.single-post-heading-container h2 {
+  color: #1d6753;
+  margin: 0;
+}
+.single-post-heading-container h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.single-post-content-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+  margin-top: 20px;
+  max-width: 1200px;
+}
+
+.single-post-images-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.single-post-image {
+  margin: 0;
+  height: 200px;
+  overflow: hidden;
+}
+
+.single-post-image-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.single-post-image-img:hover {
+  opacity: 0.7;
+}
+
+.single-post-text-container {
+  max-width: 600px;
+}
+
+.single-post-text-container p {
+  margin: 0;
+}
+
+/* Modal */
+
+.modal {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal img {
+  width: 50%;
+}

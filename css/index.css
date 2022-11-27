@@ -1,14 +1,32 @@
 @import "global.css";
 
 .home-content-container {
+  margin: 0 auto;
   display: flex;
-  margin: 50px 5% 50px 5%;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  overflow: scroll;
+  width: 1200px;
+  height: 100%;
+  background-color: grey;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.slide {
+  display: flex;
   gap: 20px;
+  background-color: white;
+  min-width: 1150px;
+  height: 700px;
+  margin: 0 25px 0 25px;
 }
 
 .home-image {
   width: 50%;
   margin: 0;
+  overflow: hidden;
 }
 
 .home-image img {
@@ -57,6 +75,7 @@
   position: fixed;
   left: 1%;
   top: 50%;
+  cursor: pointer;
 }
 
 .forward-button {
@@ -68,6 +87,7 @@
   position: fixed;
   right: 1%;
   top: 50%;
+  cursor: pointer;
 }
 
 .right-arrow:hover,
@@ -97,7 +117,7 @@
 }
 
 /* Media Queries*/
-
+/*
 @media only screen and (max-width: 810px) {
   .home-content-container {
     flex-direction: column;
@@ -113,7 +133,7 @@
     width: 100%;
   }
 }
-
+*/
 @media only screen and (max-width: 630px) {
   .right-arrow {
     border-top: 14px solid transparent;

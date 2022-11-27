@@ -32,6 +32,7 @@
 
 .post-card {
   width: 23%;
+  background-color: white;
 }
 
 .post-card-header-container {
@@ -41,12 +42,17 @@
 }
 
 .post-card-img {
-  width: 100%;
+  height: 250px;
   margin: 0;
+  overflow: hidden;
 }
 
 .post-card-img img {
   width: 100%;
+}
+
+.post-card-text {
+  height: 100px;
 }
 
 .post-card-button-container {
@@ -57,6 +63,7 @@
 
 .read-more-button {
   color: white;
+  margin-top: 20px;
   padding: 10px;
   background-color: #1d6753;
 }
