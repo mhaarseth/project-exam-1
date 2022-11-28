@@ -7,7 +7,7 @@ export function carousel() {
     slideContainer.scrollLeft -= slideContainer.clientWidth;
 
     setTimeout(() => {
-      if (slideContainer.scrollLeft <= 0) {
+      if (slideContainer.scrollLeft <= 9) {
         backButton.style.display = "none";
       }
     }, 700);

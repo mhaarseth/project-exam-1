@@ -1,49 +1,48 @@
 @import "global.css";
 
-.archive-content-container {
-  display: flex;
-  flex-direction: column;
-  margin: 50px 5% 0 5%;
-}
-
-.archive-content-container h2 {
-  font-weight: normal;
-  font-size: 1rem;
-}
-
 .archive-content-heading-container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.archive-content-filter-sort {
+  padding: 20px;
 }
 
 .archive-content-heading-container-divider {
   height: 25px;
   width: 2px;
   background-color: black;
-  margin: 0 5px 0 5px;
 }
 
 .post-cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 50px;
+  max-width: 1640px;
+  margin: 0 auto;
 }
 
 .post-card {
-  width: 23%;
+  width: 20%;
 }
 
 .post-card-header-container {
-  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
+}
+
+.archive-content-container h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 0;
 }
 
 .post-card-img {
-  height: 250px;
   margin: 0;
-  overflow: hidden;
+  padding: 20px;
 }
 
 .post-card-img img {
@@ -51,13 +50,12 @@
 }
 
 .post-card-text {
-  height: 100px;
+  padding: 0 20px;
 }
 
 .post-card-button-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
+  padding: 20px;
 }
 
 .read-more-button {
@@ -73,19 +71,25 @@
   color: white;
 }
 
-@media only screen and (max-width: 1665px) {
+@media only screen and (max-width: 1410px) {
   .post-card {
-    width: 30%;
+    width: 25%;
   }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1100px) {
   .post-card {
-    width: 47%;
+    width: 33%;
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 870px) {
+  .post-card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 590px) {
   .post-card {
     width: 100%;
   }

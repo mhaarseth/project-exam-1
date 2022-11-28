@@ -1,11 +1,10 @@
 @import "global.css";
 
 .home-content-container {
-  margin: 0 auto;
+  margin: 50px auto 50px auto;
   display: flex;
-  align-items: center;
   flex-direction: row;
-  overflow: scroll;
+  overflow-x: scroll;
   width: 90%;
   min-width: 800px;
   max-width: 1200px;
@@ -15,20 +14,18 @@
 }
 
 .home-content-container::-webkit-scrollbar {
-  display: none;
+  display: none; /* Chrome & Brave) */
 }
 
 .slide {
   display: flex;
-  gap: 20px;
   min-width: 100%;
-  height: 98%;
 }
 
 .home-image {
   width: 50%;
+  padding: 20px;
   margin: 0;
-  overflow: hidden;
 }
 
 .home-image img {
@@ -37,13 +34,16 @@
 
 .home-text {
   width: 50%;
+  padding: 20px;
+}
+
+.home-text h2 {
+  margin-top: 0;
 }
 
 .home-text-heading {
   display: flex;
-  align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 

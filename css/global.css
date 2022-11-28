@@ -15,18 +15,19 @@ a:hover {
 }
 
 body {
-  margin: 0 auto;
   background-color: #fdd8da;
-  height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 /* Heading and navigation */
 
 .navigation {
   display: flex;
-  margin: 1% 5% 0 5%;
+  margin: 0 auto;
+  max-width: 1640px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +45,8 @@ body {
   font-weight: normal;
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 20px;
 }
 
 .blog-title {
@@ -58,15 +61,11 @@ body {
   margin: 0 10px 0 10px;
 }
 
-.current-page {
-  padding-right: 50px;
-}
-
 button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 0;
+  padding: 20px;
 }
 
 .close-menu-button {
@@ -96,6 +95,7 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
+  margin-top: 30px;
 }
 
 .footer-text-container {

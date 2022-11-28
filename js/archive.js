@@ -3,7 +3,7 @@ import { toggleMenuOff } from "./components/toggleMenu.js";
 
 const url = "https://mhaarseth.no/flower-power/wp-json/wc/store/products";
 
-const archiveContentContainer = document.querySelector(".post-cards-container");
+const postCardsContainer = document.querySelector(".post-cards-container");
 
 async function getArchive() {
   try {
@@ -18,10 +18,10 @@ async function getArchive() {
       const postText = result[i].description;
       const id = result[i].id;
 
-      archiveContentContainer.innerHTML += `
+      postCardsContainer.innerHTML += `
       <div class="post-card">
           <div class="post-card-header-container">
-            <span class="post-card-header-title">${postTitle}</span>
+            <h2 class="post-card-header-title">${postTitle}</h2>
             <date class="post-card-header-date">${postDate}</date>
           </div>
           <figure class="post-card-img">
