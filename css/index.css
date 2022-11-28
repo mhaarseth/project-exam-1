@@ -5,22 +5,24 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  align-items: center;
   overflow: scroll;
-  width: 1200px;
-  height: 100%;
-  background-color: grey;
+  width: 90%;
+  min-width: 800px;
+  max-width: 1200px;
+  scroll-behavior: smooth;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+}
+
+.home-content-container::-webkit-scrollbar {
+  display: none;
 }
 
 .slide {
   display: flex;
   gap: 20px;
-  background-color: white;
-  min-width: 1150px;
-  height: 700px;
-  margin: 0 25px 0 25px;
+  min-width: 100%;
+  height: 98%;
 }
 
 .home-image {
@@ -45,95 +47,47 @@
   justify-content: space-between;
 }
 
-.left-arrow {
+.back-button {
+  display: none;
+  position: fixed;
+  left: 1%;
+  top: 45%;
+  cursor: pointer;
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-right: 20px solid black;
   opacity: 0.5;
-  position: relative;
-  right: 5px;
-}
-
-.left-circle {
-  display: inline-block;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  opacity: 0.5;
-  position: absolute;
-}
-
-.back-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  left: 1%;
-  top: 50%;
-  cursor: pointer;
 }
 
 .forward-button {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
   position: fixed;
   right: 1%;
-  top: 50%;
+  top: 45%;
   cursor: pointer;
-}
-
-.right-arrow:hover,
-.left-arrow:hover {
-  opacity: 1;
-}
-
-.right-arrow {
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-left: 20px solid black;
   opacity: 0.5;
-  position: relative;
-  left: 5px;
 }
 
-.right-circle {
-  display: inline-block;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  opacity: 0.5;
-  position: absolute;
+.forward-button:hover,
+.back-button:hover {
+  opacity: 1;
 }
 
 /* Media Queries*/
 /*
 @media only screen and (max-width: 810px) {
-  .home-content-container {
+  .slide {
     flex-direction: column;
-    gap: 0px;
-    margin-top: 15px;
   }
+}*/
 
-  .home-image {
-    width: 100%;
-  }
-
-  .home-text {
-    width: 100%;
-  }
-}
-*/
 @media only screen and (max-width: 630px) {
   .right-arrow {
     border-top: 14px solid transparent;

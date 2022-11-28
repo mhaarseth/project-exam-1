@@ -32,7 +32,6 @@
 
 .post-card {
   width: 23%;
-  background-color: white;
 }
 
 .post-card-header-container {
@@ -71,6 +70,7 @@
 .read-more-button:hover {
   border: 2px solid black;
   padding: 8px;
+  color: white;
 }
 
 @media only screen and (max-width: 1665px) {

@@ -38,3 +38,5 @@ async function getPost() {
 
 getPost();
 carousel();
+
+console.log(homeContentContainer.clientWidth);

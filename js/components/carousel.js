@@ -4,9 +4,21 @@ const slideContainer = document.querySelector(".home-content-container");
 
 export function carousel() {
   backButton.addEventListener("click", () => {
-    slideContainer.scrollLeft -= 1200;
+    slideContainer.scrollLeft -= slideContainer.clientWidth;
+
+    setTimeout(() => {
+      if (slideContainer.scrollLeft <= 0) {
+        backButton.style.display = "none";
+      }
+    }, 700);
   });
   forwardButton.addEventListener("click", () => {
-    slideContainer.scrollLeft += 1200;
+    slideContainer.scrollLeft += slideContainer.clientWidth;
+
+    setTimeout(() => {
+      if (slideContainer.scrollLeft >= 10) {
+        backButton.style.display = "flex";
+      }
+    }, 700);
   });
 }
