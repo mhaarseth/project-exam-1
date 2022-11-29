@@ -30,9 +30,9 @@ async function getArchive() {
           <div class="post-card-text">
             <p>${postText.slice(0, 200)}...</p>
           </div>
-          <div class="post-card-button-container">
-            <a class="read-more-button" aria-label="Read more" href="single-post.html?id=${id}">
-              Read more
+          <div class="go-to-post-button-container">
+            <a class="go-to-post-button" aria-label="Read more" href="single-post.html?id=${id}">
+              Go to post
             </a>
           </div>
         </div>

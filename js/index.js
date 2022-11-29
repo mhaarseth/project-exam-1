@@ -17,18 +17,25 @@ async function getPost() {
       //const imageAltText = result[i].description;
       const postDate = result[i].attributes[0].terms[0].name;
       const postText = result[i].description;
+      const id = result[i].id;
 
       homeContentContainer.innerHTML += `
       <div class="slide">
         <figure class="home-image">
-            <img src="${postImage}" alt="DALL-E's interpretation of ${postTitle}" />
-          </figure>
-          <div class="home-text">
-            <div class="home-text-heading">
-              <h2>${postTitle}</h2><date>${postDate}</date>
-            </div>
-            <p class="home-text-content">${postText}</p>
+          <img src="${postImage}" alt="DALL-E's interpretation of ${postTitle}" />
+        </figure>
+        <div class="home-text">
+          <div class="home-text-heading">
+            <h2>${postTitle}</h2><date>${postDate}</date>
           </div>
+          <div class="home-text-content">
+          ${postText.slice(0, 750)}...
+          </div>
+          <div class="go-to-post-button-container">
+          <a class="go-to-post-button" aria-label="Read more" href="single-post.html?id=${id}">
+            Go to post
+          </a>
+        </div>
       `;
     }
   } catch (error) {

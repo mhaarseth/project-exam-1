@@ -26,8 +26,7 @@ body {
 
 .navigation {
   display: flex;
-  margin: 0 auto;
-  max-width: 1640px;
+  margin: 30px 5% 0 5%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +45,6 @@ body {
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 20px;
 }
 
 .blog-title {
@@ -65,7 +63,7 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 20px;
+  padding: 20px 0 20px 0;
 }
 
 .close-menu-button {
@@ -87,15 +85,33 @@ button {
   border: 2px solid black;
 }
 
+.go-to-post-button-container {
+  text-align: right;
+  padding: 20px;
+}
+
+.go-to-post-button {
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #1d6753;
+}
+
+.go-to-post-button:hover {
+  border: 2px solid black;
+  padding: 8px;
+  color: white;
+}
+
 /* Footer */
 
 footer {
-  background-color: #1d6753;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   margin-top: 30px;
+  border-top: 1px solid white;
 }
 
 .footer-text-container {
@@ -134,7 +150,7 @@ footer {
 }
 
 .sitemap-list a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 

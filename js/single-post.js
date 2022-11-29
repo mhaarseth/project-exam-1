@@ -21,11 +21,12 @@ async function getSinglePost() {
     const postText = result.description;
 
     singlePostContainer.innerHTML = `
+    
+    <div class="single-post-content-container">
     <div class="single-post-heading-container">
         <h2>${postTitle}</h2>
         <h3>By: m. haarseth</h3>
     </div>
-    <div class="single-post-content-container">
         <div class="single-post-images-container">
         </div>
         <div class="single-post-text-container">
