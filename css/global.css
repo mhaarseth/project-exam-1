@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+:root {
+  --background-color: #fdd8da;
+  --heading-color: #011bff;
+  --link-color: black;
+  --button-color: #1d6753;
+}
+
 html {
   font-family: poppins;
   height: 100%;
@@ -7,15 +14,15 @@ html {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #011bff;
+  color: var(--heading-color);
 }
 
 body {
-  background-color: #fdd8da;
+  background-color: var(--background-color);
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -85,6 +92,8 @@ button {
   border: 2px solid black;
 }
 
+/* Go to post button */
+
 .go-to-post-button-container {
   text-align: right;
   padding: 20px;
@@ -92,9 +101,8 @@ button {
 
 .go-to-post-button {
   color: white;
-  margin-top: 20px;
   padding: 10px;
-  background-color: #1d6753;
+  background-color: var(--button-color);
 }
 
 .go-to-post-button:hover {

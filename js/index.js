@@ -29,13 +29,15 @@ async function getPost() {
             <h2>${postTitle}</h2><date>${postDate}</date>
           </div>
           <div class="home-text-content">
-          ${postText.slice(0, 750)}...
+            ${postText.slice(0, 750)}...
           </div>
           <div class="go-to-post-button-container">
-          <a class="go-to-post-button" aria-label="Read more" href="single-post.html?id=${id}">
-            Go to post
-          </a>
+            <a class="go-to-post-button" aria-label="Read more" href="single-post.html?id=${id}">
+              Go to post
+            </a>
+          </div>
         </div>
+      </div>
       `;
     }
   } catch (error) {

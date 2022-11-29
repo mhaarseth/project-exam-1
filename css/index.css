@@ -3,13 +3,11 @@
 .home-content-container {
   margin: 50px auto 50px auto;
   display: flex;
-  flex-direction: row;
   overflow-x: scroll;
   width: 90%;
-  min-width: 800px;
   max-width: 1200px;
   scroll-behavior: smooth;
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  -ms-overflow-style: none; /* Internet Explorer */
   scrollbar-width: none; /* Firefox */
 }
 
@@ -33,8 +31,11 @@
 }
 
 .home-text {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   width: 50%;
   padding: 20px;
+  max-height: 560px;
 }
 
 .home-text h2 {
@@ -45,6 +46,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.go-to-post-button-container {
+  padding: 0; /* Overriding global setting */
 }
 
 .back-button {
@@ -90,21 +95,30 @@
   }
 }*/
 
+@media only screen and (max-width: 960px) {
+  .home-content-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .slide {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-image,
+  .home-text {
+    width: 100%;
+  }
+
+  .back-button,
+  .forward-button {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 630px) {
-  .right-arrow {
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-    border-left: 14px solid black;
-    right: -4px;
-  }
-
-  .left-arrow {
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-    border-right: 14px solid black;
-    left: -4px;
-  }
-
   .back-button,
   .forward-button {
     width: 32px;
