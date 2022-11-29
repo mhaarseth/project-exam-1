@@ -100,7 +100,7 @@
     flex-direction: column;
     gap: 40px;
     max-height: none;
-    overflow: auto;
+    overflow: hidden;
   }
 
   .slide {
