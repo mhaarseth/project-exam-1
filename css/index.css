@@ -111,6 +111,7 @@
 
   .home-image,
   .home-text {
+    max-height: none;
     width: 100%;
     padding: 0;
   }
@@ -118,14 +119,5 @@
   .back-button,
   .forward-button {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 630px) {
-  .back-button,
-  .forward-button {
-    width: 32px;
-    height: 32px;
-    top: 35%;
   }
 }
