@@ -99,6 +99,7 @@
   .home-content-container {
     flex-direction: column;
     gap: 40px;
+    overflow-x: auto;
   }
 
   .slide {
