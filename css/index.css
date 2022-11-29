@@ -99,7 +99,8 @@
   .home-content-container {
     flex-direction: column;
     gap: 40px;
-    overflow-x: hidden;
+    max-height: none;
+    overflow: auto;
   }
 
   .slide {
@@ -111,6 +112,7 @@
   .home-image,
   .home-text {
     width: 100%;
+    padding: 0;
   }
 
   .back-button,
