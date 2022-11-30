@@ -23,14 +23,16 @@ async function getSinglePost() {
     singlePostContainer.innerHTML = `
     
     <div class="single-post-content-container">
-    <div class="single-post-heading-container">
-        <h2>${postTitle}</h2>
-        <h3>By: m. haarseth</h3>
-    </div>
-        <div class="single-post-images-container">
+        <div class="single-post-heading-container">
+            <h2>${postTitle}</h2>
+            <h3>By: m. haarseth</h3>
         </div>
-        <div class="single-post-text-container">
-            <p>${postText}</p>
+        <div class="single-post-content">
+            <div class="single-post-images-container">
+            </div>
+            <div class="single-post-text-container">
+                <p>${postText}</p>
+            </div>
         </div>
         <div class="single-post-comments-container"></div>
     </div>
