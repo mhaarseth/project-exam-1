@@ -87,5 +87,30 @@
   width: 50%;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 720px) {
+  .single-post-heading-container h2,
+  .single-post-heading-container h3 {
+    margin: 0;
+  }
+
+  .single-post-content {
+    flex-direction: column;
+  }
+
+  .single-post-images-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .single-post-image {
+    height: 100%;
+  }
+
+  .single-post-image-img {
+    width: 100%;
+  }
+
+  .modal img {
+    width: 100%;
+  }
 }
