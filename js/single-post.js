@@ -31,7 +31,7 @@ async function getSinglePost() {
             <div class="single-post-images-container">
             </div>
             <div class="single-post-text-container">
-                <p>${postText}</p>
+                ${postText}
             </div>
         </div>
         <div class="single-post-comments-container"></div>

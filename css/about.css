@@ -8,31 +8,24 @@
 }
 
 .about-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
   margin: 0;
 }
 
 .about-image-container img {
-  width: 75%;
+  width: 100%;
 }
 
 .about-text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-.about-text {
   width: 75%;
 }
 
+.about-text {
+  width: 100%;
+}
+
 .about-text p {
-  margin-top: 0;
-  margin-right: 20px;
+  margin: 0;
 }
 
 @media only screen and (max-width: 810px) {
