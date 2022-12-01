@@ -32,8 +32,8 @@ async function getPost() {
             ${postText.slice(0, 750)}...
           </div>
           <div class="go-to-post-button-container">
-            <a class="go-to-post-button" aria-label="Read more" href="single-post.html?id=${id}">
-              Go to post
+            <a class="go-to-post-button" aria-label="Read the full text" href="single-post.html?id=${id}">
+              Go to text
             </a>
           </div>
         </div>

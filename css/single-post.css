@@ -1,10 +1,5 @@
 @import "global.css";
 
-.current-page {
-  font-weight: bold;
-  color: #011bff;
-}
-
 .single-post-container {
   margin: 50px 5% 0 5%;
   display: flex;
@@ -79,7 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal img {

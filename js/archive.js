@@ -1,11 +1,17 @@
 import { toggleMenuOn } from "./components/toggleMenu.js";
 import { toggleMenuOff } from "./components/toggleMenu.js";
+import { showMorePosts } from "./components/showMorePosts.js";
+import { scrollDownPage } from "./components/saveScrollPosition.js";
 
-const url = "https://mhaarseth.no/flower-power/wp-json/wc/store/products";
+sessionStorage.setItem("number", 4);
 
-const postCardsContainer = document.querySelector(".post-cards-container");
+export async function getArchive() {
+  let perPageNumber = parseInt(sessionStorage.getItem("number"));
+  const postCardsContainer = document.querySelector(".post-cards-container");
+  const url =
+    "https://mhaarseth.no/flower-power/wp-json/wc/store/products?per_page=" +
+    perPageNumber;
 
-async function getArchive() {
   try {
     const response = await fetch(url);
     const result = await response.json();
@@ -37,6 +43,17 @@ async function getArchive() {
           </div>
         </div>
       `;
+
+      const postCardImageContainer = document.querySelector(".post-card-img");
+      setTimeout(
+        sessionStorage.setItem(
+          "postCardImageHeight",
+          window
+            .getComputedStyle(postCardImageContainer)
+            .getPropertyValue("height")
+        ),
+        500
+      );
     }
   } catch (error) {
     console.log(error);
@@ -44,3 +61,5 @@ async function getArchive() {
 }
 
 getArchive();
+showMorePosts();
+scrollDownPage();

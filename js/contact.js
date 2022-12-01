@@ -12,7 +12,7 @@ const message = document.getElementById("message");
 const messageValidation = document.querySelector(".message-validation");
 
 function formValidation(event) {
-  event.preventDefault();
+  //event.preventDefault();
 
   if (fullName.value.trim().length < 5) {
     nameValidation.style.display = "block";

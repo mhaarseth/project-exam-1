@@ -92,25 +92,6 @@ button {
   border: 2px solid black;
 }
 
-/* Go to post button */
-
-.go-to-post-button-container {
-  text-align: right;
-  padding: 20px;
-}
-
-.go-to-post-button {
-  color: white;
-  padding: 10px;
-  background-color: var(--button-color);
-}
-
-.go-to-post-button:hover {
-  border: 2px solid black;
-  padding: 8px;
-  color: white;
-}
-
 /* Footer */
 
 footer {
@@ -164,6 +145,23 @@ footer {
 
 .sitemap-list a:hover {
   text-decoration: underline;
+}
+
+.go-to-post-button-container {
+  text-align: right;
+  padding: 20px;
+}
+
+.go-to-post-button {
+  color: white;
+  padding: 10px;
+  background-color: var(--button-color);
+}
+
+.go-to-post-button:hover {
+  border: 2px solid black;
+  padding: 8px;
+  color: white;
 }
 
 /* Media Queries */
