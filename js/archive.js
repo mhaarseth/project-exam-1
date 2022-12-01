@@ -3,7 +3,7 @@ import { toggleMenuOff } from "./components/toggleMenu.js";
 import { showMorePosts } from "./components/showMorePosts.js";
 import { scrollDownPage } from "./components/saveScrollPosition.js";
 
-sessionStorage.setItem("number", 4);
+sessionStorage.setItem("number", 10);
 
 export async function getArchive() {
   let perPageNumber = parseInt(sessionStorage.getItem("number"));
@@ -19,7 +19,7 @@ export async function getArchive() {
     for (let i = 0; i < result.length; i++) {
       const postTitle = result[i].name;
       const postImage = result[i].images[0].src;
-      //const imageAltText = result[i].description;
+      const altText = result[i].images[0].alt;
       const postDate = result[i].attributes[0].terms[0].name;
       const postText = result[i].description;
       const id = result[i].id;
@@ -31,14 +31,14 @@ export async function getArchive() {
             <date class="post-card-header-date">${postDate}</date>
           </div>
           <figure class="post-card-img">
-            <img src="${postImage}" alt="DALL-E's interpretation of ${postTitle}" />
+            <img src="${postImage}" alt="${altText}" />
           </figure>
           <div class="post-card-text">
             <p>${postText.slice(0, 200)}...</p>
           </div>
           <div class="go-to-post-button-container">
-            <a class="go-to-post-button" aria-label="Read more" href="single-post.html?id=${id}">
-              Go to post
+            <a class="go-to-post-button" aria-label="Go to text" href="single-post.html?id=${id}">
+              Go to text
             </a>
           </div>
         </div>

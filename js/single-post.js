@@ -17,7 +17,6 @@ async function getSinglePost() {
     const result = await response.json();
 
     const postTitle = result.name;
-    //const postDate = result.attributes[0].terms[0].name;
     const postText = result.description;
 
     singlePostContainer.innerHTML = `
@@ -40,12 +39,13 @@ async function getSinglePost() {
 
     for (let i = 0; i < result.images.length; i++) {
       const postImage = result.images[i].src;
+      const altText = result.images[i].alt;
       const singlePostImagesContainer = document.querySelector(
         ".single-post-images-container"
       );
 
       singlePostImagesContainer.innerHTML += `
-      <figure class="single-post-image"><img src="${postImage}" class="single-post-image-img" alt="" ></figure>
+      <figure class="single-post-image"><img src="${postImage}" class="single-post-image-img" alt="${altText}" ></figure>
       `;
 
       modal();

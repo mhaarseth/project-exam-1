@@ -3,9 +3,9 @@ export function modal() {
   let imgSrc = "";
 
   images.forEach((img) => {
-    img.addEventListener("click", (e) => {
-      imgSrc = e.target.src;
-      console.log(imgSrc);
+    img.addEventListener("click", (event) => {
+      sessionStorage.setItem("altText", img.alt);
+      imgSrc = event.target.src;
 
       const modal = document.createElement("div");
       modal.setAttribute("class", "modal");
@@ -13,10 +13,11 @@ export function modal() {
 
       const modalImage = document.createElement("img");
       modalImage.setAttribute("src", imgSrc);
+      modalImage.setAttribute("alt", sessionStorage.getItem("altText"));
       modal.append(modalImage);
 
-      window.addEventListener("click", (e) => {
-        if (e.target === modal) {
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
           modal.remove();
         }
       });

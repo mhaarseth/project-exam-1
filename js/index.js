@@ -14,7 +14,7 @@ async function getPost() {
     for (let i = 0; i < result.length; i++) {
       const postTitle = result[i].name;
       const postImage = result[i].images[0].src;
-      //const imageAltText = result[i].description;
+      const altText = result[i].images[0].alt;
       const postDate = result[i].attributes[0].terms[0].name;
       const postText = result[i].description;
       const id = result[i].id;
@@ -22,7 +22,7 @@ async function getPost() {
       homeContentContainer.innerHTML += `
       <div class="slide">
         <figure class="home-image">
-          <img src="${postImage}" alt="DALL-E's interpretation of ${postTitle}" />
+          <img src="${postImage}" alt="${altText}" />
         </figure>
         <div class="home-text">
           <div class="home-text-heading">
