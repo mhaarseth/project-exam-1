@@ -8,7 +8,6 @@ export function carousel() {
   });
 
   backButton.addEventListener("click", () => {
-    console.log(backButton);
     slideContainer.scrollLeft -= slideContainer.clientWidth;
 
     setTimeout(() => {
@@ -23,7 +22,6 @@ export function carousel() {
     }, 500);
   });
   forwardButton.addEventListener("click", () => {
-    console.log(slideContainer.scrollLeft);
     slideContainer.scrollLeft += slideContainer.clientWidth;
 
     setTimeout(() => {

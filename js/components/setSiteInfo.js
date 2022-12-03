@@ -3,6 +3,7 @@ const url = "https://mhaarseth.no/flower-power/wp-json/";
 const blogTitle = document.querySelector(".blog-title");
 const aboutImageContainer = document.querySelector(".about-image-container");
 const favIcon = document.getElementById("favicon");
+const currentPage = document.querySelector(".current-page");
 //const blogDescription = document.querySelector(".blog-description");
 
 export async function setSiteInfo() {
@@ -12,6 +13,7 @@ export async function setSiteInfo() {
 
     const wpBlogTitle = result.name;
     const wpAboutImage = result.site_icon_url;
+
     //const wpBlogDescription = result.description;
 
     favIcon.setAttribute("href", `${wpAboutImage}`);
@@ -19,7 +21,8 @@ export async function setSiteInfo() {
     ${wpBlogTitle}
     `;
 
-    aboutImageContainer.innerHTML = `
+    if (currentPage.innerText === "about") {
+      aboutImageContainer.innerHTML = `
     <img
           src="${wpAboutImage}"
           alt="DALL-E's interpetation of the title of this blog, a candle out of focus"
@@ -27,6 +30,8 @@ export async function setSiteInfo() {
         />
     
     `;
+    }
+
     /*
     blogDescription.innerHTML = `
     ${wpBlogDescription}
