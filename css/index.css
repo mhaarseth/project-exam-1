@@ -1,6 +1,6 @@
 @import "global.css";
 
-.home-content-container {
+.home-content-slide-container {
   margin: 50px auto 50px auto;
   display: flex;
   overflow-x: scroll;
@@ -11,13 +11,18 @@
   scrollbar-width: none; /* Firefox */
 }
 
-.home-content-container::-webkit-scrollbar {
+.home-content-slide-container::-webkit-scrollbar {
   display: none; /* Chrome & Brave) */
+}
+
+.home-content-slide-button-container {
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
 .slide {
   display: flex;
-  min-width: 100%;
+  min-width: 50%;
 }
 
 .home-image {
@@ -35,11 +40,16 @@
   grid-template-rows: auto 1fr auto;
   width: 50%;
   padding: 20px;
-  max-height: 560px;
+  max-height: 260px;
+}
+
+.home-text p {
+  margin: 0;
 }
 
 .home-text h2 {
   margin-top: 0;
+  font-size: 1rem;
 }
 
 .home-text-heading {
@@ -50,28 +60,28 @@
 
 .go-to-post-button-container {
   padding: 0; /* Overriding global setting */
+  margin: 0 10px 10px 0;
 }
 
 .back-button {
-  display: none;
-  position: fixed;
+  position: relative;
+  top: 260px;
   left: 1%;
-  top: 45%;
   padding: 0;
-  cursor: pointer;
+  cursor: default;
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-right: 20px solid black;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .forward-button {
   display: flex;
-  position: fixed;
-  right: 1%;
-  top: 45%;
+  position: relative;
+  top: 220px;
+  left: 97.5%;
   padding: 0;
   cursor: pointer;
   width: 0;
@@ -79,45 +89,89 @@
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-left: 20px solid black;
-  opacity: 0.5;
-}
-
-.forward-button:hover,
-.back-button:hover {
   opacity: 1;
 }
 
 /* Media Queries*/
 
-@media only screen and (max-width: 1081px) {
-  .home-content-container {
-    overflow: hidden;
+@media only screen and (max-width: 1200px) {
+  .home-content-slide-container {
+    max-width: 1000px;
+  }
+
+  .home-content-slide-button-container {
+    max-width: 1100px;
+  }
+
+  .home-text-heading {
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+
+  .go-to-post-button-container {
+    margin-top: 20px;
   }
 }
 
-@media only screen and (max-width: 960px) {
-  .home-content-container {
-    flex-direction: column;
-    gap: 40px;
-    max-height: none;
-    overflow: hidden;
+@media only screen and (max-width: 1010px) {
+  .home-content-slide-container {
+    margin-bottom: 0;
+    max-width: 600px;
+  }
+
+  .home-content-slide-button-container {
+    max-width: 700px;
   }
 
   .slide {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-width: 100%;
   }
 
-  .home-image,
-  .home-text {
-    max-height: none;
+  .home-image {
     width: 100%;
+    height: 50%;
+    overflow: hidden;
     padding: 0;
   }
 
-  .back-button,
+  .home-text {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .go-to-post-button-container {
+    padding-top: 30px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .home-content-slide-container {
+    max-width: 400px;
+  }
+  .home-content-slide-button-container {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .home-content-slide-button-container {
+    max-width: 400px;
+  }
+
   .forward-button {
-    display: none;
+    left: 93.5%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-content-slide-container {
+    max-width: 365px;
+  }
+  .home-content-slide-button-container {
+    max-width: 380px;
   }
 }

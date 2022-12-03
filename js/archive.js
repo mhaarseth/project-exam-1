@@ -2,6 +2,7 @@ import { toggleMenuOn } from "./components/toggleMenu.js";
 import { toggleMenuOff } from "./components/toggleMenu.js";
 import { showMorePosts } from "./components/showMorePosts.js";
 import { scrollDownPage } from "./components/saveScrollPosition.js";
+import { setSiteInfo } from "./components/setSiteInfo.js";
 
 sessionStorage.setItem("number", 10);
 
@@ -34,7 +35,7 @@ export async function getArchive() {
             <img src="${postImage}" alt="${altText}" />
           </figure>
           <div class="post-card-text">
-            <p>${postText.slice(0, 200)}...</p>
+            <p>${postText.slice(0, 50)}...</p>
           </div>
           <div class="go-to-post-button-container">
             <a class="go-to-post-button" aria-label="Go to text" href="single-post.html?id=${id}">
@@ -63,3 +64,4 @@ export async function getArchive() {
 getArchive();
 showMorePosts();
 scrollDownPage();
+setSiteInfo();

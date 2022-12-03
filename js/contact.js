@@ -1,6 +1,7 @@
 import { toggleMenuOn } from "./components/toggleMenu.js";
 import { toggleMenuOff } from "./components/toggleMenu.js";
 import { eMailValidation } from "./components/emailValidation.js";
+import { setSiteInfo } from "./components/setSiteInfo.js";
 
 const submitForm = document.querySelector(".submit-contact-form");
 const fullName = document.getElementById("name");
@@ -12,7 +13,7 @@ const message = document.getElementById("message");
 const messageValidation = document.querySelector(".message-validation");
 
 function formValidation(event) {
-  //event.preventDefault();
+  event.preventDefault();
 
   if (fullName.value.trim().length < 5) {
     nameValidation.style.display = "block";
@@ -55,3 +56,4 @@ function formSentMessage() {
 }
 
 submitForm.addEventListener("click", formSentMessage);
+setSiteInfo();
