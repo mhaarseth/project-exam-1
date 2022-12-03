@@ -9,7 +9,6 @@ const id = urlParams.get("id");
 
 const url = "https://mhaarseth.no/flower-power/wp-json/wc/store/products/" + id;
 
-//const currentPage = document.querySelector(".current-page");
 const singlePostContainer = document.querySelector(".single-post-container");
 
 async function getSinglePost() {

@@ -9,16 +9,45 @@ const homeContentSlideContainer = document.querySelector(
   ".home-content-slide-container"
 );
 
+const newPostContainer = document.querySelector(".new-post-container");
+
 async function getPosts() {
   try {
     const response = await fetch(url);
     const result = await response.json();
 
-    for (let i = 0; i < result.length; i++) {
+    const newPostTitle = result[0].name;
+    const newPostImage = result[0].images[0].src;
+    const altText = result[0].images[0].alt;
+    const newPostText = result[0].description;
+    const newPostId = result[0].id;
+
+    newPostContainer.innerHTML = `
+    <div class="new-post">
+        <figure class="new-post-image">
+          <img src="${newPostImage}" alt="${altText}" />
+        </figure>
+        <div class="new-post-text">
+          <div class="new-post-heading">
+            <h3>${newPostTitle}</h3>
+          </div>
+          <div class="new-post-content">
+            <p>${newPostText}</p>
+          </div>
+          <div class="go-to-post-button-container">
+            <a class="go-to-post-button" aria-label="Read the full text" href="single-post.html?id=${newPostId}">
+              Go to text
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    `;
+
+    for (let i = 1; i < result.length; i++) {
       const postTitle = result[i].name;
       const postImage = result[i].images[0].src;
       const altText = result[i].images[0].alt;
-      //const postDate = result[i].attributes[0].terms[0].name;
       const postText = result[i].description;
       const id = result[i].id;
 

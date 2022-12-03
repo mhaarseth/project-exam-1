@@ -31,6 +31,10 @@ body {
 
 /* Heading and navigation */
 
+header {
+  margin-bottom: 50px;
+}
+
 .navigation {
   display: flex;
   margin: 30px 5% 0 5%;
@@ -46,17 +50,10 @@ body {
   justify-content: center;
 }
 
-.heading-container h1 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
 .blog-title {
-  color: #011bff;
-  font-weight: normal;
+  color: var(--heading-color);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .nav-divider {
@@ -64,6 +61,14 @@ body {
   height: 30px;
   background-color: black;
   margin: 0 10px 0 10px;
+}
+
+.heading-container h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 button {
@@ -90,6 +95,20 @@ button {
   right: 5%;
   top: 75px;
   border: 2px solid black;
+}
+
+/* Page headings */
+
+h2 {
+  font-size: 3rem;
+  padding-left: 20px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
 }
 
 /* Footer */

@@ -7,9 +7,12 @@
 
 .archive-content-heading-container {
   display: flex;
-  align-items: center;
-  max-width: 1640px;
-  margin: 0 auto;
+  flex-direction: column;
+  text-align: left;
+}
+
+.archive-content-heading-container h2 {
+  margin-bottom: 0; /* Overriding global value*/
 }
 
 .archive-content-filter-sort {
@@ -17,17 +20,34 @@
   text-decoration: line-through;
 }
 
-.archive-content-heading-container-divider {
-  height: 25px;
-  width: 2px;
+.archive-content-sort {
+  display: flex;
+  padding-left: 20px;
+}
+
+.sort-new-to-old {
+  font-weight: bold;
+  margin-right: 1px;
+}
+
+.sort-old-to-new {
+  font-weight: normal;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.sort-divider {
+  height: 20px;
+  width: 1px;
   background-color: black;
+  margin: 0 5px;
 }
 
 .post-cards-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1640px;
-  margin: 30px auto 0 auto;
+  margin: 70px auto 0 auto;
 }
 
 .post-card {
@@ -41,11 +61,11 @@
   padding: 0 20px;
 }
 
-.archive-content-container h2 {
+.post-card-header-container h3 {
+  padding: 0;
   font-weight: bold;
   font-size: 1rem;
   margin: 0;
-  color: #1d6753;
 }
 
 .post-card-img {

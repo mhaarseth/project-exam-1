@@ -5,6 +5,7 @@ import { scrollDownPage } from "./components/saveScrollPosition.js";
 import { setSiteInfo } from "./components/setSiteInfo.js";
 
 sessionStorage.setItem("number", 10);
+const sortOldToNew = document.querySelector(".sort-old-to-new");
 
 export async function getArchive() {
   let perPageNumber = parseInt(sessionStorage.getItem("number"));
@@ -17,19 +18,49 @@ export async function getArchive() {
     const response = await fetch(url);
     const result = await response.json();
 
+    sortOldToNew.addEventListener("click", () => {
+      postCardsContainer.innerHTML = "";
+      const reversedResult = result.reverse();
+
+      for (let i = 0; i < reversedResult.length; i++) {
+        const postTitle = reversedResult[i].name;
+        const postImage = reversedResult[i].images[0].src;
+        const altText = reversedResult[i].images[0].alt;
+        const postText = reversedResult[i].description;
+        const id = reversedResult[i].id;
+
+        postCardsContainer.innerHTML += `
+        <div class="post-card">
+            <div class="post-card-header-container">
+              <h3 class="post-card-header-title">${postTitle}</h2>
+            </div>
+            <figure class="post-card-img">
+              <img src="${postImage}" alt="${altText}" />
+            </figure>
+            <div class="post-card-text">
+              <p>${postText.slice(0, 50)}...</p>
+            </div>
+            <div class="go-to-post-button-container">
+              <a class="go-to-post-button" aria-label="Go to text" href="single-post.html?id=${id}">
+                Go to text
+              </a>
+            </div>
+          </div>
+        `;
+      }
+    });
+
     for (let i = 0; i < result.length; i++) {
       const postTitle = result[i].name;
       const postImage = result[i].images[0].src;
       const altText = result[i].images[0].alt;
-      const postDate = result[i].attributes[0].terms[0].name;
       const postText = result[i].description;
       const id = result[i].id;
 
       postCardsContainer.innerHTML += `
       <div class="post-card">
           <div class="post-card-header-container">
-            <h2 class="post-card-header-title">${postTitle}</h2>
-            <date class="post-card-header-date">${postDate}</date>
+            <h3 class="post-card-header-title">${postTitle}</h2>
           </div>
           <figure class="post-card-img">
             <img src="${postImage}" alt="${altText}" />

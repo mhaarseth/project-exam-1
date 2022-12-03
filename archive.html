@@ -9,22 +9,6 @@
       src="https://kit.fontawesome.com/1eb31d1de3.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Hotjar Tracking Code for a whisper light and low -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3270743, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
     <link id="favicon" rel="icon" type="image/x-icon" />
     <title>whispers from a machine | archive</title>
   </head>
@@ -51,7 +35,14 @@
       </ul>
     </header>
     <main class="archive-content-container">
-      <div class="archive-content-heading-container"></div>
+      <div class="archive-content-heading-container">
+        <h2>all posts</h2>
+        <div class="archive-content-sort">
+          <span class="sort-new-to-old">Sort</span>
+          :
+          <span class="sort-old-to-new">Reverse order</span>
+        </div>
+      </div>
       <div class="post-cards-container"></div>
       <button class="show-more-posts-button" aria-label="Show more posts">
         Show more posts

@@ -2,8 +2,12 @@
 
 .contact-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
+}
+
+.contact-container h2 {
+  padding-left: 0; /* Override the global value*/
 }
 
 form {

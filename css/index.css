@@ -1,5 +1,43 @@
 @import "global.css";
 
+.home-content-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* New post */
+
+.new-post {
+  margin: 0 auto;
+  display: flex;
+  /* width: 90%; --Removed when styling headings-- */
+  max-width: 1200px;
+}
+
+.new-post-image {
+  width: 50%;
+  padding: 20px;
+  margin: 0;
+}
+
+.new-post-image img {
+  width: 100%;
+}
+
+.new-post-text {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 50%;
+  padding: 20px;
+}
+
+.new-post-text h2 {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+/* Carousel */
+
 .home-content-slide-container {
   margin: 50px auto 50px auto;
   display: flex;
