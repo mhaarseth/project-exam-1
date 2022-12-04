@@ -21,7 +21,7 @@
 
 .single-post-heading-container h2 {
   color: #1d6753;
-  margin: 0 0 0 240px;
+  margin: 0 0 0 220px;
 }
 .single-post-heading-container h3 {
   font-weight: normal;
@@ -83,6 +83,11 @@
     margin: 0;
   }
 
+  .single-post-heading-container h2 {
+    padding: 0;
+    font-size: 2rem;
+  }
+
   .single-post-content-container {
     margin: 0 auto;
   }
@@ -110,5 +115,18 @@
 
   .modal img {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .single-post-heading-container h2,
+  .single-post-heading-container h3 {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .single-post-heading-container h2,
+  .single-post-heading-container h3 {
+    font-size: 1.4rem;
   }
 }
