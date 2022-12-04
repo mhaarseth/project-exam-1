@@ -2,6 +2,7 @@ import { toggleMenuOn } from "./components/toggleMenu.js";
 import { toggleMenuOff } from "./components/toggleMenu.js";
 import { carousel } from "./components/carousel.js";
 import { setSiteInfo } from "./components/setSiteInfo.js";
+import { displayError } from "./components/displayError.js";
 
 const url = "https://mhaarseth.no/flower-power/wp-json/wc/store/products";
 
@@ -73,7 +74,7 @@ async function getPosts() {
       `;
     }
   } catch (error) {
-    console.log(error);
+    displayError(error);
   }
 }
 

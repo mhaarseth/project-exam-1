@@ -110,13 +110,12 @@
   top: 300px;
   left: 1%;
   padding: 0;
-  cursor: default;
+  cursor: not-allowed;
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-right: 20px solid black;
-  opacity: 0.2;
 }
 
 .forward-button {
@@ -131,7 +130,6 @@
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-left: 20px solid black;
-  opacity: 1;
 }
 
 /* Media Queries*/

@@ -103,6 +103,14 @@ button {
   border: 2px solid var(--border-color);
 }
 
+.error-message {
+  display: none;
+  padding: 0 20px;
+  background-color: var(--background-color);
+  border: 5px solid var(--form-validation-message-color);
+  color: var(--form-validation-message-color);
+}
+
 /* Page headings */
 
 h2 {

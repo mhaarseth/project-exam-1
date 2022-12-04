@@ -12,11 +12,9 @@ export function carousel() {
 
     setTimeout(() => {
       if (slideContainer.scrollLeft <= 9) {
-        backButton.style.opacity = "0.2";
-        backButton.style.cursor = "default";
+        backButton.style.cursor = "not-allowed";
       }
       if (slideContainer.scrollLeft <= 3999) {
-        forwardButton.style.opacity = "1";
         forwardButton.style.cursor = "pointer";
       }
     }, 500);
@@ -26,12 +24,10 @@ export function carousel() {
 
     setTimeout(() => {
       if (slideContainer.scrollLeft >= 10) {
-        backButton.style.opacity = "1";
         backButton.style.cursor = "pointer";
       }
-      if (slideContainer.scrollLeft >= 4000) {
-        forwardButton.style.opacity = "0.2";
-        forwardButton.style.cursor = "default";
+      if (slideContainer.scrollLeft >= 3600) {
+        forwardButton.style.cursor = "not-allowed";
       }
     }, 500);
   });

@@ -3,6 +3,7 @@ import { toggleMenuOff } from "./components/toggleMenu.js";
 import { showMorePosts } from "./components/showMorePosts.js";
 import { scrollDownPage } from "./components/saveScrollPosition.js";
 import { setSiteInfo } from "./components/setSiteInfo.js";
+import { displayError } from "./components/displayError.js";
 
 sessionStorage.setItem("number", 10);
 const sortOldToNew = document.querySelector(".sort-old-to-new");
@@ -89,6 +90,7 @@ export async function getArchive() {
     }
   } catch (error) {
     console.log(error);
+    displayError(error);
   }
 }
 

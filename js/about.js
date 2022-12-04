@@ -1,6 +1,7 @@
 import { toggleMenuOn } from "./components/toggleMenu.js";
 import { toggleMenuOff } from "./components/toggleMenu.js";
 import { setSiteInfo } from "./components/setSiteInfo.js";
+import { displayError } from "./components/displayError.js";
 
 setSiteInfo();
 
@@ -23,7 +24,7 @@ async function getAboutText() {
       ${wpAboutHeading}
     `;
   } catch (error) {
-    console.log(error);
+    displayError(error);
   }
 }
 

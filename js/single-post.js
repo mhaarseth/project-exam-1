@@ -2,6 +2,7 @@ import { toggleMenuOn } from "./components/toggleMenu.js";
 import { toggleMenuOff } from "./components/toggleMenu.js";
 import { modal } from "./components/modal.js";
 import { setSiteInfo } from "./components/setSiteInfo.js";
+import { displayError } from "./components/displayError.js";
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -51,7 +52,7 @@ async function getSinglePost() {
       modal();
     }
   } catch (error) {
-    console.log(error);
+    displayError(error);
   }
 }
 

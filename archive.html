@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Whispers from a machine is a blog where the artifical intelligence DALL-E meets human creativity, me. DALL-E generates photos from my prompts, and I write. In the archive you can find all the posts that has been made, and click through to each one."
+      content="Whispers from a machine is a blog where the artifical intelligence DALL-E meets human creativity, me. DALL-E generates photos from my prompts, and I write. In the archive you can find all the posts that has been made, and click through to each."
     />
     <link rel="stylesheet" href="css/archive.css" />
     <script
@@ -38,19 +38,22 @@
         <li><a class="menu-link" href="contact.html">contact</a></li>
       </ul>
     </header>
-    <main class="archive-content-container">
-      <div class="archive-content-heading-container">
-        <h2>all posts</h2>
-        <div class="archive-content-sort">
-          <span class="sort-new-to-old">Sort</span>
-          :
-          <span class="sort-old-to-new">Reverse order</span>
+    <main class="main">
+      <div class="error-message"></div>
+      <div class="archive-content-container page-content">
+        <div class="archive-content-heading-container">
+          <h2>all posts</h2>
+          <div class="archive-content-sort">
+            <span class="sort-new-to-old">Sort</span>
+            :
+            <span class="sort-old-to-new">Reverse order</span>
+          </div>
         </div>
+        <div class="post-cards-container"></div>
+        <button class="show-more-posts-button" aria-label="Show more posts">
+          Show more posts
+        </button>
       </div>
-      <div class="post-cards-container"></div>
-      <button class="show-more-posts-button" aria-label="Show more posts">
-        Show more posts
-      </button>
     </main>
     <footer>
       <div class="footer-text-container">

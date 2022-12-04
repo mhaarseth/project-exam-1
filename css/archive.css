@@ -1,6 +1,7 @@
 @import "global.css";
 
 .archive-content-container {
+  max-width: 1640px;
   margin: 0 auto;
   text-align: center;
 }
