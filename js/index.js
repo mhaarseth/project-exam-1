@@ -58,7 +58,7 @@ async function getPosts() {
         </figure>
         <div class="home-text">
           <div class="home-text-heading">
-            <h2>${postTitle}</h2>
+            <h3>${postTitle}</h3>
           </div>
           <div class="home-text-content">
             <p>${postText.slice(0, 125)}...</p>

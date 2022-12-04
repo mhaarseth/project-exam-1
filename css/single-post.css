@@ -20,7 +20,7 @@
 }
 
 .single-post-heading-container h2 {
-  color: #1d6753;
+  color: var(--heading-color);
   margin: 0 0 0 220px;
 }
 .single-post-heading-container h3 {
@@ -114,7 +114,7 @@
   }
 
   .modal img {
-    width: 100%;
+    width: 80%;
   }
 }
 

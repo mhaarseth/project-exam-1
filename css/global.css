@@ -5,6 +5,12 @@
   --heading-color: #011bff;
   --link-color: black;
   --button-color: #1d6753;
+  --button-font-color: white;
+  --default-font-color: black;
+  --divider-color: black;
+  --border-color: black;
+  --form-validation-message-color: #c9001b;
+  --success-message-color: #1d6753;
 }
 
 html {
@@ -59,7 +65,7 @@ header {
 .nav-divider {
   width: 2px;
   height: 30px;
-  background-color: black;
+  background-color: var(--divider-color);
   margin: 0 10px 0 10px;
 }
 
@@ -83,7 +89,7 @@ button {
 }
 
 .hamburger-menu {
-  background-color: #fdd8da;
+  background-color: var(--background-color);
   display: none;
   list-style-type: none;
   padding: 10px;
@@ -94,7 +100,7 @@ button {
   z-index: 100;
   right: 5%;
   top: 75px;
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
 }
 
 /* Page headings */
@@ -117,9 +123,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
-  margin-top: 30px;
-  border-top: 1px solid white;
+  color: var(--default-font-color);
+  margin-top: 125px;
 }
 
 .footer-text-container {
@@ -133,7 +138,7 @@ footer {
 .footer-divider {
   width: 300px;
   height: 1px;
-  background-color: white;
+  background-color: var(--divider-color);
   margin: 1px auto 1px auto;
 }
 
@@ -144,7 +149,7 @@ footer {
 }
 
 .footer-bottom-divider {
-  background-color: white;
+  background-color: var(--divider-color);
   width: 1px;
   height: 20px;
   margin: 6px 10px 6px 10px;
@@ -158,7 +163,7 @@ footer {
 }
 
 .sitemap-list a {
-  color: black;
+  color: var(--default-font-color);
   text-decoration: none;
 }
 
@@ -172,15 +177,15 @@ footer {
 }
 
 .go-to-post-button {
-  color: white;
+  color: var(--button-font-color);
   padding: 10px;
   background-color: var(--button-color);
 }
 
 .go-to-post-button:hover {
-  border: 2px solid black;
-  padding: 8px;
-  color: white;
+  border: 3px solid var(--border-color);
+  padding: 7px;
+  color: var(--button-font-color);
 }
 
 /* Media Queries */

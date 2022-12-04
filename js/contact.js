@@ -41,6 +41,9 @@ function formValidation(event) {
 }
 
 submitForm.addEventListener("click", formValidation);
+const successMessage = document.querySelector(
+  ".form-success-message-container"
+);
 
 function formSentMessage() {
   if (
@@ -49,9 +52,9 @@ function formSentMessage() {
     messageValidation.style.display === "none" &&
     mailValidation.style.display === "none"
   ) {
-    console.log("Success!");
+    successMessage.style.display = "flex";
   } else {
-    console.log("Unsuccess");
+    successMessage.style.display = "none";
   }
 }
 

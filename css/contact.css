@@ -41,7 +41,7 @@ form {
 }
 
 .form-validation-message {
-  color: #c9001b;
+  color: var(--form-validation-message-color);
 }
 
 .form-textarea-container {
@@ -65,15 +65,30 @@ textarea {
 
 .form-textarea-container button {
   margin-top: 20px;
-  color: white;
+  color: var(--button-font-color);
   padding: 10px;
-  background-color: #1d6753;
+  background-color: var(--button-color);
   align-self: flex-start;
 }
 
 .form-textarea-container button:hover {
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   padding: 8px;
+}
+
+.form-success-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  display: none;
+}
+
+.form-success-message {
+  font-size: 2rem;
+  color: var(--success-message-color);
+  font-weight: bold;
+  padding: 10px;
 }
 
 /* Media Queries */
