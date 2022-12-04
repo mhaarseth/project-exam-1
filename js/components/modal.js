@@ -16,7 +16,7 @@ export function modal() {
       modalImage.setAttribute("alt", sessionStorage.getItem("altText"));
       modal.append(modalImage);
 
-      window.addEventListener("click", (event) => {
+      modal.addEventListener("click", (event) => {
         if (event.target === modal) {
           modal.remove();
         }
