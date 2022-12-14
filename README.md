@@ -6,7 +6,7 @@ Project exam at Noroff.
 
 ## Description
 
-This was our final exam during our first semester, and is, I think, a good representation of me as a front end developer. The design is simple, consisting of bold colors and text.
+This was our final exam during our first semester, and is, I think, a good representation of me as a front end developer. The design is simple, consisting of bold colors and text. intuitive navigation and no superfluos design elements.
 
 ## Built With
 
