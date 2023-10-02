@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-  --background-color: #fdd8da;
+  --background-color: #ffffff;
   --heading-color: #011bff;
   --link-color: black;
-  --button-color: #1d6753;
+  --button-color: #000;
   --button-font-color: white;
   --default-font-color: black;
   --divider-color: black;
@@ -16,6 +16,7 @@
 html {
   font-family: poppins;
   height: 100%;
+  font-size: 62.5%;
 }
 
 a {
@@ -33,6 +34,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   margin: 0 auto;
+  font-size: 1.6rem;
 }
 
 /* Heading and navigation */
