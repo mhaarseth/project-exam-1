@@ -4,9 +4,15 @@
   "description": "![image](https://github.com/mhaarseth/project-exam-1/blob/main/images/WhispersFromAMachine.jpg?raw=true)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test-e2e",
+    "test-e2e": "cypress open"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.4.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-cypress": "^2.15.1"
+  }
 }
