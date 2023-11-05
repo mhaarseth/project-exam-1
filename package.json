@@ -1,0 +1,12 @@
+{
+  "name": "project-exam-1",
+  "version": "1.0.0",
+  "description": "![image](https://github.com/mhaarseth/project-exam-1/blob/main/images/WhispersFromAMachine.jpg?raw=true)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
