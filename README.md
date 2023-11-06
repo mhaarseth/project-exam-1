@@ -29,3 +29,7 @@ No contributions wanted at this time.
 My presence on social media is limited. I can be reached by mail.
 
 mhaarseth@gmail.com
+
+[![Automated E2E Testing](https://github.com/mhaarseth/project-exam-1/actions/workflows/e2e-test.yml/badge.svg)](https://github.com/mhaarseth/project-exam-1/actions/workflows/e2e-test.yml)
+
+[![Automated E2E Testing](https://github.com/mhaarseth/project-exam-1/actions/workflows/e2e-test.yml/badge.svg)](https://github.com/mhaarseth/project-exam-1/actions/workflows/e2e-test.yml)
